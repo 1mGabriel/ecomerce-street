@@ -1,0 +1,45 @@
+.collection-row{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+.collection-row a{
+    text-decoration: none;
+    color: #fff;
+}
+.memorie, .washed, .hood{
+    margin: 20px 0px;
+    filter: brightness(.4);
+    transition: .3s;
+    width: 638px;
+    height:632px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+.memorie:hover, .washed:hover, .hood:hover{
+    filter: brightness(1);
+}
+.memorie{
+    background-image: url("../assets/memorie.png");
+    background-size: cover;
+font-family: "Philosopher";
+}
+.hood{
+font-family: "Play";
+background-image: url("../assets/hood.png");
+background-size: cover;
+}
+.washed{
+    font-family: "Sankofa Display", sans-serif;
+    background-image: url("../assets/washed.png");
+    background-size: cover;
+}
+@media (max-width:428px) {
+    .memorie, .washed, .hood{
+        width: 302px;
+        height: 400px;
+
+    }
+}

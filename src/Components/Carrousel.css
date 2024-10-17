@@ -1,0 +1,50 @@
+.carousel-wraper{
+    width: 100%;
+}
+.product-card img{
+    width: 348px;
+    height: 377px;
+    border-radius: 11px;
+    opacity: .7;
+}
+.product-card img:hover{
+    opacity: 1;
+}
+
+.carrousel-row{
+    margin-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-family: "Questrial";
+    margin-bottom: 30PX;
+}
+.price_2, .parcelas{
+    color: #444;
+    font-weight: bold;
+    padding: 10px;
+}
+.pix{
+    font-weight: bold;
+    padding: 10px;
+    color: #46b844;
+}
+
+@media (max-width:428px) {
+    .product-card img{
+    width: 308px;
+    height: 357px;
+}
+}
+@media (main-width:800px) and (max-width:1279px) {
+    .product-card img{
+        width: 338px;
+        height: 357px;
+    }
+}

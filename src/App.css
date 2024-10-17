@@ -1,0 +1,49 @@
+.notification-container.show{
+    z-index: 12;
+    transition: .4s;
+    overflow-x: hidden;
+    position: fixed;
+    bottom: 0px;
+    width: 90%;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    padding: 10px;
+    border-radius: 11px;
+    margin: 10px;
+    border-bottom: 5px solid rgb(134, 53, 134);
+}
+.notification-container.hide{
+    width: 0px;
+    height: 0px;
+}
+@media (min-width:800px) and (max-width:1279px) {
+    .notification-container.show{
+        transition: .4s;
+        overflow-x: hidden;
+        position: fixed;
+        bottom: 0px;
+        width: 50%;
+        text-align: center;
+        background-color: rgb(19, 19, 19);
+        padding: 10px;
+        border-radius: 11px;
+        margin: 10px;
+        border-bottom: 5px solid rgb(134, 53, 134);
+    }
+}
+@media (min-width:1280px) {
+     .notification-container.show{
+        transition: .4s;
+        overflow-x: hidden;
+        position: fixed;
+        bottom: 0px;
+        width: 50%;
+        text-align: center;
+        background-color: rgb(19, 19, 19);
+        padding: 10px;
+        border-radius: 11px;
+        margin: 10px;
+        border-bottom: 5px solid rgb(134, 53, 134);
+    }
+}

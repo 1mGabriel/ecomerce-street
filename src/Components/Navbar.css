@@ -1,0 +1,234 @@
+.nav-bar {
+  background-color: #121212;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.nav-bar svg {
+  color: #fff;
+  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-bar svg:hover {
+  opacity: 1;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-section.show {
+  transition: 0.4s;
+
+  background: rgb(16, 9, 28);
+  background: linear-gradient(
+    188deg,
+    rgba(16, 9, 28, 1) 0%,
+    rgba(45, 23, 77, 1) 98%
+  );
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 30%;
+}
+.cart-section.show {
+  transition: 0.4s;
+  background: rgb(16, 9, 28);
+  background: linear-gradient(
+    188deg,
+    rgba(16, 9, 28, 1) 0%,
+    rgba(45, 23, 77, 1) 98%
+  );
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30%;
+}
+.close-button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+  font-family: "Questrial";
+  font-size: 26px;
+}
+.close-button span {
+  opacity: 0.7;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background-color: #2d174d;
+}
+.close-button span:hover {
+  opacity: 1;
+}
+.options ul {
+  list-style: none;
+}
+.options li {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.4s;
+  padding: 10px;
+  font-family: "Questrial";
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #949393;
+}
+.options li:hover {
+  opacity: 1;
+}
+.options a {
+  color: #fff;
+}
+
+.menu-section.hide {
+  transition: 0.4s;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+.cart-section.hide {
+  transition: 0.4s;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+.produto-cart-section {
+  overflow-y: scroll;
+  width: 100%;
+  margin: 0 auto;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.products-cart {
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.produto-cart {
+  padding: 4px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 29%;
+  border-bottom: 1px solid #999999;
+}
+.produto-cart-end {
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.produto-cart-end p {
+  font-family: "Questrial";
+  color: #7a7a7a;
+}
+.produto-cart-end svg {
+  color: #fff;
+  font-size: clamp(1.75em, 1em + 3vw, 1.5em);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.products-cart h2 {
+  height: 100%;
+  font-size: 15px;
+}
+.produto-cart img {
+  width: 55%;
+  height: 100%;
+}
+
+.total-container div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-container div p {
+  font-family: "Questrial";
+  color: #fff;
+  font-weight: bold;
+}
+.total-container button {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #3a9439;
+  transition: 0.4s;
+}
+.total-container button:hover {
+  background-color: #40c93e;
+}
+.notification .hide{
+  display: none;
+}
+.notification {
+  border-radius: 100px;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #9931ee;
+  right: 55px;
+  top: 30px;
+}
+@media (max-width: 428px) {
+  .menu-section.show {
+    width: 100%;
+
+    height: 100vh;
+    z-index: 10;
+  }
+  .cart-section.show {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+  }
+  .notification{
+    right: 15px;
+    top: 30px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .menu-section.show {
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+  }
+  .cart-section.show {
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+  }
+  .notification{
+    right: 35px;
+    top: 30px;
+  }
+}

@@ -1,0 +1,19 @@
+.slider-container{
+    width: 100%;
+}
+.slider-container img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 428px ) {
+ .slider-container{
+    padding-top: 21%;
+ }   
+}
+
+@media (min-width:429px) and (max-width:800px) {
+    .slider-container{
+        padding-top: 10%;
+     } 
+}

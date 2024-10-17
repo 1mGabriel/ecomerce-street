@@ -1,0 +1,115 @@
+.produto{
+    padding-top: 100px;
+}
+.produto-content{
+    margin: 20px 0px;
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: space-between;
+}
+.slider{
+    width: 40%;
+    pad: 10px;
+}
+.slider img{
+    border-radius: 11px;
+   width: 100%;
+   height: 520px; 
+   cursor: pointer;
+}
+.contents{
+    width: 50%;
+}
+.contents p{
+    color: #fff;
+    font-family: "Questrial";
+    text-align: start;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.contents h3{
+    font-family: "Questrial";
+    color: #585757;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.contents h2{
+    font-family: "Questrial";
+    color: #0dad0d;
+    font-size: 30px;
+}
+.contents button{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 16px;
+    font-family: "Questrial";
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .3s;
+    background: rgb(84,52,177);
+background: linear-gradient(82deg, rgba(84,52,177,1) 0%, rgba(61,40,91,1) 98%);
+}
+.contents button:hover{
+    color: rgb(84,52,177);  
+    background-color: #fff;
+    background: #fff;
+    border: 1px solid rgb(84,52,177);
+}
+@media (max-width:428px) {
+    .slider{
+        width: 100%;
+    }
+    .slider img{
+       width: 100%;
+       height: 520px; 
+    }
+    .produto-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+    .produto{
+        width: 100%;
+    }
+    .contents{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contents button{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:800px) and (max-width:1279px) {
+    .slider{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slider img{
+       width: 100%;
+       height: 520px; 
+    }
+    .produto-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+    .produto{
+        width: 100%;
+    }
+    .contents{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contents button{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

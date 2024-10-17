@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width: 90%;
+  margin:  0 auto
+}
+body{
+  background-color: #121212;
+}
+.title{
+  padding: 10px;
+  font-size: clamp(1.35em, .3em + 3vw, 2.5em);
+}
+.questrial{
+  font-family: "Questrial";
+  color: #fff;
+}
+.pirate-one{
+  font-family: "Pirata One";
+  color: #fff;
+}
+.paragraph{
+  font-size: clamp(1.35em, .1em + 3vw, 2.5em);
+  text-align: center;
+}
+
+/* Customizando a largura e cor do trilho da scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+  height: 10px;
+}
+
+/* Estilizando o trilho (o fundo da scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #20202010; /* Cor do trilho */
+}
+
+/* Estilizando o polegar (a parte que desliza) */
+::-webkit-scrollbar-thumb {
+  background-color: #470e5e41; /* Cor do polegar */
+  border-radius: 10px;     /* Cantos arredondados */
+  border:none; /* Borda ao redor do polegar */
+}
+
+/* Estilizando o polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #551964; /* Muda a cor ao passar o mouse */
+}

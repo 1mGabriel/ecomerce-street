@@ -1,0 +1,92 @@
+.banner-brands {
+  padding-top: 100px;
+  text-align: center;
+}
+.banner-brands h1 {
+  font-size: 30px;
+}
+
+.products {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.product-page {
+cursor: pointer;
+transition: .3s;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin: 10px 0px;
+  flex-direction: column;
+  width: 32.33%;
+  height: 570px;
+}
+
+.product-page img {
+  height: 350px;
+  border-radius: 11px;
+  width: 100%;
+}
+
+.product-page h3{
+   font-size: 24px;
+   height: 60px;
+   opacity: .8;
+   transition: .4s;
+}
+.product-page h3:hover{
+  color: rgb(125, 34, 235) ;
+}
+.title, .price_2, .pix,.parcelas{
+    font-family: "Questrial";
+}
+
+@media (max-width: 428px) {
+    .product-page {
+        cursor: pointer;
+        transition: .3s;
+          display: flex;
+          justify-content: start;
+          padding: 10px;
+          margin: 10px 0px;
+          flex-direction: column;
+          width: 48.33%;
+          height: 470px;
+        }
+        .product-page img {
+            border-radius: 11px;
+            height: 250px;
+            width: 100%;
+          }
+          .product-page h3{
+            font-size: 15px;
+            height: 40px;
+         }
+         .product-page h2{
+            font-size: 17px;
+         }
+}
+@media (min-width:800px) and (max-width:1279px) {
+    .product-page {
+        cursor: pointer;
+        transition: .3s;
+          display: flex;
+          justify-content: start;
+          padding: 10px;
+          margin: 10px 0px;
+          flex-direction: column;
+          width: 48.33%;
+          height: 570px;
+        }
+}
+@media (min-width:1400px) {
+    .product-page {
+        width: 23%;
+    }
+}

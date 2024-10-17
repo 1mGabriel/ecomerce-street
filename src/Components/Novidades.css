@@ -1,0 +1,27 @@
+.novidades-wraper{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.novidades-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.novidades-cards {
+    width: 100%;
+    margin-top: 20px;
+}
+.novidades-cards img, .novidades-cards video{
+    width: 100%;
+    border-radius: 11px;
+}
+@media (min-width: 1280px) {
+.novidades-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.novidades-cards img, .novidades-cards video{
+    width: 375px;
+    height: 100%;
+}
+}
